@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/10/31 下午2:57
-# @Author  : 韩字杰
+# @Author  : Zijie Han
 # @Site    : 
 # @File    : BigIntegetMultiplication.py
 # @Software: PyCharm

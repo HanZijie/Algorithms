@@ -96,7 +96,12 @@ class Pair(object):
             tMiddleLeft -= 1
         while self.L[tMiddleRight][0] - self.L[x][0] < normalMin and tMiddleRight < r:
             tMiddleRight += 1
-        crossMin,crossPair = self.subClosest(tMiddleLeft,tMiddleRight)
+        tMiddleLeft += 1
+        tMiddleRight += 1
+        crossMin = normalMin
+        crossPair = normalPair
+        if tMiddleLeft != tMiddleRight:
+            crossMin,crossPair = self.subClosest(tMiddleLeft,tMiddleRight)
 
         if crossMin < normalMin:
             normalMin = crossMin
@@ -128,10 +133,14 @@ class Pair(object):
         return math.sqrt(a + b)
 
 
-# if __name__ == '__main__':
-#     L = [(7,5),(5,5),(2,2),(4,1),(100,8),(14,5),(6,7)]
-#     mPair = Pair(L)
-#     min,minPair = mPair.getMinPairList(0,len(L)-1)
-#     print(mPair.L)
-#     print(min)
-#     print(minPair)
+if __name__ == '__main__':
+    # L = [(7,5),(5,5),(2,2),(4,1),(100,8),(14,5),(6,7)]
+    # mPair = Pair(L)
+    # min,minPair = mPair.getMinPairList(0,len(L)-1)
+    # print(mPair.L)
+    # print(min)
+    # print(minPair)
+
+    a = "hello world"
+    l = a[:5]
+    print(l)
