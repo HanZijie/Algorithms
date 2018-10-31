@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/10/31 上午10:37
-# @Author  : 韩字杰
+# @Author  : Zijie Han
 # @Site    : 
 # @File    : ClosestPair.py
 # @Software: PyCharm
