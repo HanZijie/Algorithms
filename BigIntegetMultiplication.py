@@ -10,10 +10,16 @@ class BigInteger(object):
     @staticmethod
     def Multiplicate(a , b):
         # 封装乘法函数
-        
+        flag = 0
+        if a[0] == "-" and b[0] != "-":
+            flag = -1
+        elif a[0] != "-" and b[0] == "-":
+            flag = -1
         ans = BigInteger.mMultiplicate(a , b)
         while ans[0] == "0":
             ans = ans[1:len(ans)]
+        if flag == -1:
+            return "-"+ans
         return ans
 
     @staticmethod
